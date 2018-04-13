@@ -1,24 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djo-fZ-WHg">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="Tcy-1W-B8f">
+            <objects>
+                <viewController id="8Nc-mY-UUc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i7T-sQ-bFO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaK-XJ-R4t">
+                                <rect key="frame" x="0.0" y="287" width="414" height="36"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="SS0-ta-Ioz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Ta kort och spara till kameraalbum"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Rod-rT-Irf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CL-V2-n7A">
+                                <rect key="frame" x="0.0" y="413" width="414" height="36"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Ta kort och bilden finns kvar i appen"/>
+                                <connections>
+                                    <segue destination="w1W-ZV-9EV" kind="show" id="H2K-6h-VHX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eBU-1S-UZP" firstAttribute="bottom" secondItem="8CL-V2-n7A" secondAttribute="bottom" constant="287" id="67y-2Q-cRL"/>
+                            <constraint firstItem="8CL-V2-n7A" firstAttribute="trailing" secondItem="eBU-1S-UZP" secondAttribute="trailing" id="7pC-n9-xIV"/>
+                            <constraint firstItem="kaK-XJ-R4t" firstAttribute="leading" secondItem="eBU-1S-UZP" secondAttribute="leading" id="Z7O-zf-db2"/>
+                            <constraint firstItem="8CL-V2-n7A" firstAttribute="top" secondItem="kaK-XJ-R4t" secondAttribute="bottom" constant="90" id="h2p-Jc-AgG"/>
+                            <constraint firstItem="kaK-XJ-R4t" firstAttribute="trailing" secondItem="eBU-1S-UZP" secondAttribute="trailing" id="m8L-N5-XlV"/>
+                            <constraint firstItem="8CL-V2-n7A" firstAttribute="leading" secondItem="eBU-1S-UZP" secondAttribute="leading" id="ppo-RD-Yi4"/>
+                            <constraint firstItem="kaK-XJ-R4t" firstAttribute="top" secondItem="eBU-1S-UZP" secondAttribute="top" constant="223" id="sFS-FV-WLl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eBU-1S-UZP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HU7-iz-Qsz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aho-rx-jYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="-688"/>
+        </scene>
+        <!--Save to phone-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Save to phone" id="BYZ-38-t0r" customClass="TakePictureAndSaveToPhoneViewController" customModule="Camera" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="170-MU-hFr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="694"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaA-bg-kFE">
+                                <rect key="frame" x="0.0" y="702" width="414" height="34"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Ta kort">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FOZ-4I-X3T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zaA-bg-kFE" firstAttribute="top" secondItem="170-MU-hFr" secondAttribute="bottom" constant="8" id="KLf-Ku-xX1"/>
+                            <constraint firstItem="170-MU-hFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LqX-jb-VYN"/>
+                            <constraint firstItem="zaA-bg-kFE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PUH-z7-8Wf"/>
+                            <constraint firstItem="170-MU-hFr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vkb-ox-wOe"/>
+                            <constraint firstItem="170-MU-hFr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xt9-1h-ghK"/>
+                            <constraint firstItem="zaA-bg-kFE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="guS-XK-ma6"/>
+                            <constraint firstItem="zaA-bg-kFE" firstAttribute="top" secondItem="170-MU-hFr" secondAttribute="bottom" constant="8" id="obo-kK-qoz"/>
+                            <constraint firstItem="zaA-bg-kFE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sUr-WV-oYo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="picture" destination="170-MU-hFr" id="0Mb-rL-vaT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-130" y="64"/>
+        </scene>
+        <!--Save to app-->
+        <scene sceneID="oWD-hQ-Far">
+            <objects>
+                <viewController title="Save to app" id="w1W-ZV-9EV" customClass="TakePictureAndSaveToAppViewController" customModule="Camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TKj-Dh-97h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r0O-uD-cV8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="694"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mf4-zi-AXb">
+                                <rect key="frame" x="0.0" y="702" width="414" height="34"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Ta kort">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="w1W-ZV-9EV" eventType="touchUpInside" id="E6S-oS-SX3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r0O-uD-cV8" firstAttribute="leading" secondItem="NnZ-d5-dIY" secondAttribute="leading" id="4Cg-07-KXL"/>
+                            <constraint firstItem="r0O-uD-cV8" firstAttribute="trailing" secondItem="NnZ-d5-dIY" secondAttribute="trailing" id="Hq5-Dd-Jh7"/>
+                            <constraint firstItem="mf4-zi-AXb" firstAttribute="trailing" secondItem="NnZ-d5-dIY" secondAttribute="trailing" id="QxL-ch-JHO"/>
+                            <constraint firstItem="mf4-zi-AXb" firstAttribute="leading" secondItem="NnZ-d5-dIY" secondAttribute="leading" id="XWJ-PP-M8C"/>
+                            <constraint firstItem="r0O-uD-cV8" firstAttribute="top" secondItem="TKj-Dh-97h" secondAttribute="top" id="Xza-Q9-JlF"/>
+                            <constraint firstItem="mf4-zi-AXb" firstAttribute="top" secondItem="r0O-uD-cV8" secondAttribute="bottom" constant="8" id="YRc-Rh-Nf5"/>
+                            <constraint firstItem="mf4-zi-AXb" firstAttribute="top" secondItem="r0O-uD-cV8" secondAttribute="bottom" constant="8" id="oWg-5r-dhl"/>
+                            <constraint firstItem="mf4-zi-AXb" firstAttribute="bottom" secondItem="NnZ-d5-dIY" secondAttribute="bottom" id="rjH-4Y-pbb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NnZ-d5-dIY"/>
+                    </view>
+                    <connections>
+                        <outlet property="picture" destination="r0O-uD-cV8" id="kcZ-NI-ucv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xn8-f9-7c9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721.73913043478262" y="63.586956521739133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v2u-p7-PYR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="djo-fZ-WHg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UUk-q6-GuN">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Nc-mY-UUc" kind="relationship" relationship="rootViewController" id="TpG-DX-wFs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nau-Na-xL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="-688"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

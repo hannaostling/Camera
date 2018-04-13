@@ -12,6 +12,8 @@
 		B5926A9820808D9500102A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5926A9620808D9500102A44 /* Main.storyboard */; };
 		B5926A9A20808D9700102A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5926A9920808D9700102A44 /* Assets.xcassets */; };
 		B5926A9D20808D9700102A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5926A9B20808D9700102A44 /* LaunchScreen.storyboard */; };
+		B5926AA52080A40200102A44 /* SaveToPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5926AA42080A40200102A44 /* SaveToPhoneViewController.swift */; };
+		B5926AA72080A40F00102A44 /* SaveToAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5926AA62080A40F00102A44 /* SaveToAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B5926A9920808D9700102A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5926A9C20808D9700102A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5926A9E20808D9700102A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5926AA42080A40200102A44 /* SaveToPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToPhoneViewController.swift; sourceTree = "<group>"; };
+		B5926AA62080A40F00102A44 /* SaveToAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B5926A9920808D9700102A44 /* Assets.xcassets */,
 				B5926A9B20808D9700102A44 /* LaunchScreen.storyboard */,
 				B5926A9E20808D9700102A44 /* Info.plist */,
+				B5926AA42080A40200102A44 /* SaveToPhoneViewController.swift */,
+				B5926AA62080A40F00102A44 /* SaveToAppViewController.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5926AA72080A40F00102A44 /* SaveToAppViewController.swift in Sources */,
+				B5926AA52080A40200102A44 /* SaveToPhoneViewController.swift in Sources */,
 				B5926A9520808D9500102A44 /* ViewController.swift in Sources */,
 				B5926A9320808D9500102A44 /* AppDelegate.swift in Sources */,
 			);
